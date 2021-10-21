@@ -15,10 +15,10 @@ class CreateCurrencyRatesTable extends Migration
     {
         Schema::create('currency_rates', function (Blueprint $table) {
             $table->integer('id')->autoIncrement();
-            $table->char('from ', 3);
-            $table->char('to ', 3);
-            $table->integer('rate ');
-            $table->float('multiplier')->default(1);
+            $table->char('from', 3);
+            $table->char('to', 3);
+            $table->integer('rate');
+            $table->float('multiplier', 12, 6)->default(1);
         });
     }
 
