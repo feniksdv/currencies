@@ -25,8 +25,7 @@ spatie/laravel-translatable )
 1. Написать 2 миграции
 2. Написать сидеры для  таблиц модуля конвертера валют, содержащие данные 3 основных
    валют: RUB, USD, EUR и 6 курсов конвертации для них. Для указания курса валют для
-   начала можно взять данные курсов ЦБЕС - https://www.ecb.europa.eu/stats/policy_and_exc
-   hange_rates/euro_reference_exchange_rates/html/index.en.html
+   начала можно взять данные курсов ЦБЕС - https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
 3. Создать API метод конвертации валюты с учётом внутренних коэффициентов.
    Метод должен принимать на вход единственный параметр - user_currency (char:3)  ISO-код
    исходной валюты.
